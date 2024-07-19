@@ -1,5 +1,7 @@
 // Code your testbench here
 // or browse Examples
+Syntax:- [data_type] [array_name] [dimension];
+
 module unpacked;
   
   byte vlsi[8];
