@@ -24,7 +24,20 @@ module dynamic_arr;
      foreach(arr[i])begin
       $display("new array=[%0d]=%0d",i,arr[i]);
        arr.delete();
-       $display("new array deleted size=%0d",arr.size());          
+       $display("new array deleted size=%0d",arr.size());        
+
+     arr=new[6];
+    $display("new array size=%0d",arr.size());
+    arr='{1,2,3,5,6};
+     foreach(arr[i])begin
+   // arr.delete();
+     //$display("new array deleted size=%0d",arr.size());  
+       arr.reverse();
+       $display("new array=[%0d]=%0d",i,arr[i]);
+
+
+
+       
     end
     
   end
@@ -52,5 +65,10 @@ endmodule
 # KERNEL: new array=[8]=0
 # KERNEL: new array=[9]=0
 # KERNEL: new array size=6
+# KERNEL: new array=[0]=6
+# KERNEL: new array=[1]=2
+# KERNEL: new array=[2]=3
+# KERNEL: new array=[3]=5
+# KERNEL: new array=[4]=1
 # KERNEL: new array=[0]=1
 # KERNEL: new array deleted size=0
