@@ -1,3 +1,5 @@
+---->.FORLOOP  HAS WHILE:
+
 module loopfor;
   
   int count;
