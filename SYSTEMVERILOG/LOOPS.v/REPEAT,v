@@ -1,0 +1,21 @@
+module loopfor;
+  
+  int count;
+  initial begin
+    for(;;)begin
+      repeat(2)
+      $display("value of count=[%0d]",count);
+      if(count==2)break;
+        count++;
+        end
+        end
+        endmodule
+
+OUTPUT:
+
+# KERNEL: value of count=[0]
+# KERNEL: value of count=[0]
+# KERNEL: value of count=[1]
+# KERNEL: value of count=[1]
+# KERNEL: value of count=[2]
+# KERNEL: value of count=[2]
