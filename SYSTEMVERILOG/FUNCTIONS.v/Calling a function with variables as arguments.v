@@ -8,9 +8,9 @@ module examplefunction;
     return a+b;
 
   endfunction
-  
-  
-  //Calling a function with values as arguments
+    
+
+ // Calling a function with variables as arguments
   
   initial begin
     out=sum(a,b);
