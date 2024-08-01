@@ -28,7 +28,7 @@ class act extends eg;  //------> using baseclass keyword(extends)
   endfunction
   
     function void display();
-      super.display;      //------> keyword(super.display)
+      super.display();      //------> keyword(super.display)
       $display("-------------");
     $display("age=%0d", age);
     $display("name=%0s", name);
@@ -96,7 +96,7 @@ class act extends eg;  //------> using baseclass keyword(extends)
   endfunction
   
     function void display();
-     // super.display;      //------> without using keyword(super.display)
+      // super.display();      //------> without using keyword(super.display)
       $display("-------------");
     $display("age=%0d", age);
     $display("name=%0s", name);
