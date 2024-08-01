@@ -58,10 +58,10 @@ endclass:act
 ------------------------------------------------------------------------------------------
  OUTPUT:
 # KERNEL: -------------
-# KERNEL: age=21
-# KERNEL: name=RU
+# KERNEL: age1=21
+# KERNEL: name1=RU
 # KERNEL: -------------
 # KERNEL: -------------
-# KERNEL: age=31
-# KERNEL: name=ae
+# KERNEL: age2=31
+# KERNEL: name2=ae
 # KERNEL: -------------
