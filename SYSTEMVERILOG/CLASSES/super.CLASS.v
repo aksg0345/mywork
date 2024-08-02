@@ -2,18 +2,18 @@
 ------------------------------------------------------------------------------------------
 class eg;
   
-  int age; //-------> PROPERITIES
-  string name;
+  int age1; //-------> PROPERITIES
+  string name1;
   
    function new(); //-------> METHOD
-   this.age=21;
-   this.name="RU";
+   this.age1=21;
+   this.name1="RU";
   endfunction
 
    function void display(); //----- USING VOID FUNCTION TO DISPLAY 
     $display("-------------");
-    $display("age=%0d", age);
-    $display("name=%0s", name);
+     $display("age1=%0d", age1);
+     $display("name1=%0s", name1);
     $display("-------------");
   endfunction
   
@@ -21,17 +21,20 @@ endclass
 
 
 class act extends eg;  //------> using baseclass keyword(extends)
+  
+  int age2; //-------> PROPERITIES
+  string name2;
    
   function new();
-    this.age=31;
-    this.name="ae";
+    this.age2=31;
+    this.name2="ae";
   endfunction
   
     function void display();
-      super.display();      //------> keyword(super.display)
-      $display("-------------");
-    $display("age=%0d", age);
-    $display("name=%0s", name);
+    super.display();      //------> keyword(super.display)
+    $display("-------------");
+      $display("age2=%0d", age2);
+      $display("name2=%0s", name2);
      $display("-------------");
   endfunction
   
@@ -50,18 +53,18 @@ endclass
     end
   endmodule
 
+
 ------------------------------------------------------------------------------------------------
 OUTPUT:
 
 # KERNEL: -------------
-# KERNEL: age=31
-# KERNEL: name=ae
+# KERNEL: age1=21
+# KERNEL: name1=RU
 # KERNEL: -------------
 # KERNEL: -------------
-# KERNEL: age=31
-# KERNEL: name=ae
+# KERNEL: age2=31
+# KERNEL: name2=ae
 # KERNEL: -------------
-
 
 ------------------------------------------------------------------------------------------------
 
@@ -70,18 +73,18 @@ OUTPUT:
 ------------------------------------------------------------------------------------------------
  class eg;
   
-  int age; //-------> PROPERITIES
-  string name;
+  int age1; //-------> PROPERITIES
+  string name1;
   
    function new(); //-------> METHOD
-   this.age=21;
-   this.name="RU";
+   this.age1=21;
+   this.name1="RU";
   endfunction
 
    function void display(); //----- USING VOID FUNCTION TO DISPLAY 
     $display("-------------");
-    $display("age=%0d", age);
-    $display("name=%0s", name);
+     $display("age1=%0d", age1);
+     $display("name1=%0s", name1);
     $display("-------------");
   endfunction
   
@@ -89,17 +92,20 @@ endclass
 
 
 class act extends eg;  //------> using baseclass keyword(extends)
+  
+  int age2; //-------> PROPERITIES
+  string name2;
    
   function new();
-    this.age=31;
-    this.name="ae";
+    this.age2=31;
+    this.name2="ae";
   endfunction
   
     function void display();
-      // super.display();      //------> without using keyword(super.display)
-      $display("-------------");
-    $display("age=%0d", age);
-    $display("name=%0s", name);
+    super.display();      //------> keyword(super.display)
+    $display("-------------");
+      $display("age2=%0d", age2);
+      $display("name2=%0s", name2);
      $display("-------------");
   endfunction
   
@@ -117,6 +123,7 @@ endclass
   
     end
   endmodule
+
 ------------------------------------------------------------------------------------------------
 OUTPUT:
 
