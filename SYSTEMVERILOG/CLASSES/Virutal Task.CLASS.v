@@ -21,7 +21,7 @@ class exam2 extends exam1;
   
     
       
- virtual task display();
+  task display();
     name2="CAT";
     marks2= 95;
    $display("name2=%0s and marks2=%0d",name2,marks2);
@@ -38,7 +38,7 @@ class exam3 extends exam1;
    int marks3;
   
           
- virtual task display();
+  task display();
     name3="COW";
     marks3= 55;
    $display("name3=%0s and marks3=%0d",name3,marks3);
